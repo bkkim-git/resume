@@ -1,0 +1,15 @@
+.nav-item{
+    /*margin-right:40px;*/
+    padding: 10px 25px;
+    font-size: 12px;
+    font-weight: normal;
+    letter-spacing: 2px;
+    color:white;
+}
+
+.nav-link.active {
+    background-color: #5891b0;
+    color: white;
+    border-radius: 20px;
+    padding: 10px 20px;
+}
