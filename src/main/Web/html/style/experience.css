@@ -233,6 +233,7 @@ progress {
 }
 .networkingSlides,
 .pandoraSlides,
+.odooSlides,
 .pianoSlides {
     display: none;
 }
