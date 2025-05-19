@@ -4,66 +4,63 @@
 <script src="js/scroll.js"></script>
 <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css">
 <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons/font/bootstrap-icons.css">
-<link rel="stylesheet" href="style/rest.css">
+<link rel="stylesheet" href="style/experience.css">
+<link rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css"/>
 
+<script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+<link rel="stylesheet" href="https://www.w3schools.com/w3css/5/w3.css">
+<style>
+
+</style>
 <body>
-    <div class="mainContainer">
-            <div id="navbar-placeholder"></div>
-            <div class="divider"></div>
+<div class="mainContainer">
+    <div id="navbar-placeholder"></div>
+    <div class="divider"></div>
+    <div style=" padding: 2% 20%;">
+        <section class="other motion"  style="text-align: center; padding: 20px; display: flex; justify-content: center; align-items: center;">
+            <h1 style="font-size: clamp(40px, 8vw, 70px); font-weight: 700;  font-family: 'Julius Sans One', serif;">EXPERIENCE</h1>
+        </section>
 
-            <section class="other motion"  style="text-align: center; padding: 20px; display: flex; justify-content: center; align-items: center;">
-                <h1 style="font-size: clamp(40px, 8vw, 70px); font-weight: 700; ">EXPERIENCE</h1>
-            </section>
+        <section class="other"  style="text-align: center; padding: 20px; display: flex; justify-content: center; align-items: center;">
+            <h4 style="margin-top:30px; font-size: clamp(40px, 8vw, 50px);   font-family:'Montserrat Thin';">SOFTWARE PROJECT</h4>
+        </section>
 
-            <section class="other"  style="text-align: center; padding: 20px; display: flex; justify-content: center; align-items: center;">
-                <h4 style="margin-top:30px; font-size: clamp(40px, 8vw, 50px);   font-family:'Montserrat Thin';">SOFTWARE PROJECT</h4>
-            </section>
-
-            <section class="ex">
-                <div class="pic">
-                    <img src="images/java.jpg" alt="error">
+        <div class="inside-con swiper">
+            <div class="swiper-wrapper">
+                <div class="pic swiper-slide">
+                    <div style="background: black; border-radius: 20px;">
+                        <img src="images/java.jpg" style="opacity: 0.5" alt="error">
+                    </div>
+                    <button class="moreDetails" data-target="networking">
+                        Networking Game
+                    </button>
                 </div>
-                <div class="box">
-                    <h2>Networking Game</h2>
-                    <p>
-                        Developed a networking game using Java, enhancing my skills in class diagram design, team communication, and object-oriented programming (OOP).
-                        we created an online board game Rummikub that supported both local gameplay and online networking, including an intelligent computer player. What I remember most is taking charge of developing the computer player, which required designing strategies to handle various and unexpected gameplay situations effectively.
-
-                    </p>
+                <div class="pic swiper-slide">
+                    <div style="background: black; border-radius: 20px;">
+                        <img src="images/pandora.jpg"  style="opacity: 0.5" alt="error">
+                    </div>
+                    <button class="moreDetails" data-target="pandora">
+                        Web Application
+                    </button>
                 </div>
-            </section>
-
-            <section class="ex">
-                <div class="pic">
-                    <img src="images/pandora.jpg" alt="error">
+                <div class="pic swiper-slide">
+                    <div style="background: black; border-radius: 20px;">
+                        <img src="images/piano.jpg"  style="opacity: 0.5" alt="error">
+                    </div>
+                    <button class="moreDetails" data-target="piano">
+                        LED-Guided Piano Learning System
+                    </button>
                 </div>
-                <div class="box">
-                    <h2>Web Application</h2>
-                    <p>
-                        Implemented both front-end and back-end for a web application, gaining expertise in database management, JavaScript, Java, and other related technologies.
-                        Our website is a platform for managing information about the Pandora game, including viewing overall scores and team details. Users can log in as either a team member or an administrator, each with a different account interface.
-
-                    </p>
-                </div>
-            </section>
-
-            <section class="ex">
-                <div class="pic">
-                    <img src="images/piano.jpg" alt="error">
-                </div>
-                <div class="box">
-                    <h2>Interaction Design project</h2>
-                    <p>
-                        Developed an LED-guided piano learning system by integrating a mini piano and LED with a Raspberry Pi and Python.
-                        Throughout the project, we designed the system from concept to final product, gaining insights into the target audience. We also conducted prototype testing and held a demo market to validate our concept.
-                </div>
-            </section>
-         <section class="other"  style="text-align: center; padding: 20px; display: flex; justify-content: center; align-items: center;">
+            </div>
+            <div class="swiper-pagination"></div>
+        </div>
+        <section class="other"  style="margin-top:70px;text-align: center; padding: 20px; display: flex; justify-content: center; align-items: center;">
             <h4 style="margin-top:30px; font-size: clamp(40px, 8vw, 50px);   font-family:'Montserrat Thin'">EXTRA PROGRAM</h4>
         </section>
         <section class="ex">
             <div class="box">
-                <h2>Entrepreneurship & Business Development Honours Program</h2>
+                <h2 style="font-family: 'Julius Sans One', serif;">Entrepreneurship & Business Development Honours Program</h2>
                 <p>
                     I am currently enrolled in an honors program offered to the top 10% of students, selected based on my CV and interview performance.
                     I am specializing in the Business Development track, where I am cultivating an entrepreneurial mindset.
@@ -73,17 +70,17 @@
             </div>
         </section>
 
-            <section class="other"  style="text-align: center; padding: 20px; display: flex; justify-content: center; align-items: center;">
-                <h4 style="margin-top:30px; font-size: clamp(40px, 8vw, 50px);   font-family:'Montserrat Thin'">CERTIFICATION</h4>
-            </section>
+        <section class="other"  style="text-align: center; padding: 20px; display: flex; justify-content: center; align-items: center;">
+            <h4 style="margin-top:30px; font-size: clamp(40px, 8vw, 50px);   font-family:'Montserrat Thin'">CERTIFICATION</h4>
+        </section>
 
-            <div style="display: grid">
+        <div style="display: grid">
             <section class="ex" style="grid-column: 1/2; margin-right: 50px;">
                 <div class="pic">
                     <img src="images/certi.jpg" alt="error">
                 </div>
                 <div class="box">
-                    <h2>Module 6 best demo award public vote</h2>
+                    <h2 style="font-family: 'Julius Sans One', serif;">Module 6 best demo award public vote</h2>
                     <p>
                         Implemented the LED-guided piano, which received positive feedback from both students and professors. As a result, we were honored to receive the Best Demo Award through a public vote.
                     </p>
@@ -96,64 +93,233 @@
                     <img src="images/rapid.jpg" alt="error">
                 </div>
                 <div class="box">
-                    <h2>Rapid Mendix Developer</h2>
+                    <h2 style="font-family: 'Julius Sans One', serif;">Rapid Mendix Developer</h2>
                     <p>
                         During project, we utilized the Mendix platform, and as a result, I obtained the certification in Mendix.            </p>
                 </div>
             </section>
-            </div>
+        </div>
     </div>
+</div>
+
+<link rel="stylesheet" href="style/footer.css">
+<div class="footer">
+    <div class="grid-container">
+        <div class="wish">
+            <h3>CONTACT ME</h3>
+            <p class="foot">
+                I am a passionate and dedicated individual eager to contribute to your company. Excited to bring my creativity, determination, and commitment to your team, confident that I can make a meaningful impact. Contact me if you're looking for someone ready to deliver exceptional results.
+            </p>
+        </div>
+        <div class="info">
+            <p  class="foot">
+                <a class="contact" href="mailto:iapandora2024@gmail.com" target="contact" role="button">
+                    <img src="images/email.png" class="imga" alt="error">
+                    prettyfly680@gmail.com
+                </a>
+            </p>
+            <p  class="foot">
+                <a class="contact" href="https://linkedin.com/in/bokyung-kim-42a541332" target="contact" role="button">
+                    <img src="images/linkedin.png" class="imga" alt="error">
+                    linkedin.com/in/bokyung-kim-42a541332
+                </a>
+            </p>
+            <p class="foot">
+                <a class="contact" href="tel:+31687547806" target="_blank" role="button">
+                    <img src="images/phone.png" class="imga" alt="전화 아이콘">
+                    <span class="phone-number">+31 6 87547806</span>
+                </a>
+            </p>
+        </div>
+    </div>
+</div>
+
+<script>
+    document.addEventListener("DOMContentLoaded", function () {
+        const paragraphs = document.querySelectorAll("p");
+
+        function revealOnScroll() {
+            paragraphs.forEach(paragraph => {
+                const rect = paragraph.getBoundingClientRect();
+                if (rect.top < window.innerHeight * 0.85) {
+                    paragraph.classList.add("show");
+                }
+            });
+        }
+
+        window.addEventListener("scroll", revealOnScroll);
+        revealOnScroll();
+    });
+    document.addEventListener("DOMContentLoaded", function () {
+        var swiper = new Swiper(".inside-con", {
+            effect: "coverflow",
+            grabCursor: true,
+            centeredSlides: true,
+            slidesPerView: "auto",
+            coverflowEffect: {
+                rotate: 50,
+                stretch: 0,
+                depth: 100,
+                modifier: 1,
+                slideShadows: true,
+            },
+            pagination: {
+                el: ".swiper-pagination",
+            },
+        });
+
+        var buttons = document.querySelectorAll(".moreDetails");
+
+        buttons.forEach(btn => {
+            btn.onclick = function () {
+                var targetID= btn.getAttribute("data-target");
+                var modal=document.getElementById(targetID)
+                if(modal) {
+                    modal.style.display = "block";
+                    slideIndices[targetID] = 1;
+                    showDivs(targetID, 1);
+                }
+            }
+        });
+
+        window.onclick = function (event) {
+            const modals= document.querySelectorAll(".modal");
+            modals.forEach( modal =>{
+                if (event.target === modal) {
+                    modal.style.display = "none";
+                }
+            })
+        }
+    });
+
+    const slideIndices = {
+        networking: 1,
+        pandora: 1,
+        piano: 1
+    };
 
 
-    <link rel="stylesheet" href="style/footer.css">
-    <div class="footer">
-        <div class="grid-container">
-            <div class="wish">
-                <h3>CONTACT ME</h3>
-                <p class="foot">
-                    I am a passionate and dedicated individual eager to contribute to your company. Excited to bring my creativity, determination, and commitment to your team, confident that I can make a meaningful impact. Contact me if you're looking for someone ready to deliver exceptional results.
-                </p>
-            </div>
-            <div class="info">
-                <p  class="foot">
-                    <a class="contact" href="mailto:iapandora2024@gmail.com" target="contact" role="button">
-                        <img src="images/email.png" class="imga" alt="error">
-                        prettyfly680@gmail.com
-                    </a>
-                </p>
-                <p  class="foot">
-                    <a class="contact" href="https://linkedin.com/in/bokyung-kim-42a541332" target="contact" role="button">
-                        <img src="images/linkedin.png" class="imga" alt="error">
-                        linkedin.com/in/bokyung-kim-42a541332
-                    </a>
-                </p>
-                <p class="foot">
-                    <a class="contact" href="tel:+31687547806" target="_blank" role="button">
-                        <img src="images/phone.png" class="imga" alt="전화 아이콘">
-                        <span class="phone-number">+31 6 87547806</span>
-                    </a>
-                </p>
+    function plusDivs(modalName,n) {
+        showDivs(modalName,slideIndices[modalName]+=n);
+    }
+
+    function showDivs(modalName, n) {
+        const slides = document.getElementsByClassName(modalName + "Slides");
+        if (n > slides.length) slideIndices[modalName] = 1;
+        if (n < 1) slideIndices[modalName] = slides.length;
+
+        for (let i = 0; i < slides.length; i++) {
+            slides[i].style.display = "none";
+        }
+        slides[slideIndices[modalName] - 1].style.display = "block";
+    }
+
+</script>
+<div id="networking" class="modal">
+    <div class="modal-content">
+        <div class="w3-content w3-display-container">
+            <img class="networkingSlides" src="images/java.jpg" style="width:100%;border-radius: 10px; !important;">
+            <img class="networkingSlides"  src="images/ja1.png" style="width:100%; border-radius: 10px;!important;">
+            <img class="networkingSlides"  src="images/ja2.png" style="width:100%; border-radius: 10px;!important;">
+            <img class="networkingSlides"  src="images/ja3.png" style="width:100%; border-radius: 10px;!important;">
+            <img class="networkingSlides"  src="images/java4.png" style="width:100%; border-radius: 10px;!important;">
+            <button class="w3-button w3-display-left" onclick="plusDivs('networking', -1)">&#10094;</button>
+            <button class="w3-button w3-display-right" onclick="plusDivs('networking', 1)">&#10095;</button>
+        </div>
+        <div style="padding: 20px;">
+            <h2>Networking Game</h2>
+            <p style="font-size: 20px">
+                November 2024 - January 2025
+            </p>
+            <p>
+                Developed a networking game using Java, enhancing my skills in class diagram design, team communication, and object-oriented programming (OOP).
+                we created an online board game Rummikub that supported both local gameplay and online networking, including an intelligent computer player. What I remember most is taking charge of developing the computer player, which required designing strategies to handle various and unexpected gameplay situations effectively.
+            </p>
+            <div style="justify-content: center; position:relative; bottom: 0">
+                <div class="lang">
+                    Java
+                </div>
+                <div class="lang">
+                    Gitlab
+                </div>
             </div>
         </div>
-
     </div>
-    <script>
-        document.addEventListener("DOMContentLoaded", function () {
-            const paragraphs = document.querySelectorAll("p");  // 모든 p 요소 선택
+</div>
 
-            function revealOnScroll() {
-                paragraphs.forEach(paragraph => {
-                    const rect = paragraph.getBoundingClientRect();  // 각 p 요소의 위치 계산
-                    if (rect.top < window.innerHeight * 0.85) {  // 화면에 보일 때
-                        paragraph.classList.add("show");  // show 클래스 추가하여 애니메이션
-                    }
-                });
-            }
+<div class="modal" id="pandora">
+    <div class="modal-content">
+        <div class="w3-content w3-display-container">
+            <img class="pandoraSlides" src="images/pandora.jpg" style="width:100%;border-radius: 10px; !important;">
+            <img class="pandoraSlides"  src="images/web1.png" style="width:100%; border-radius: 10px;!important;">
+            <img class="pandoraSlides"  src="images/web2.png" style="width:100%; border-radius: 10px;!important;">
+            <img class="pandoraSlides"  src="images/web3.png" style="width:100%; border-radius: 10px;!important;">
+            <img class="pandoraSlides"  src="images/web4.png" style="width:100%; border-radius: 10px;!important;">
 
-            window.addEventListener("scroll", revealOnScroll);  // 스크롤 이벤트 추가
-            revealOnScroll();  // 페이지 로드 시 실행
-        });
-    </script>
+            <button class="w3-button w3-display-left"  onclick="plusDivs('pandora', -1)">&#10094;</button>
+            <button class="w3-button w3-display-right"  onclick="plusDivs('pandora', 1)">&#10095;</button>
+        </div>
+        <div style="padding: 20px;">
+            <h2>Web Application</h2>
+            <p style="font-size: 20px">
+                March 2024 - July 2024
+            </p>
+            <p>
+                Implemented both front-end and back-end for a web application, gaining expertise in database management, JavaScript, Java, and other related technologies.
+                Our website is a platform for managing information about the Pandora game, including viewing overall scores and team details. Users can log in as either a team member or an administrator, each with a different account interface.
+            </p>
+            <div style="justify-content: center; position:relative; bottom: 0">
+                <div class="lang">
+                    Java
+                </div>
+                <div class="lang">
+                    Github
+                </div>
+                <div class="lang">
+                    CSS/HTML
+                </div>
+                <div class="lang">
+                    Javascript
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+<div class="modal" id="piano">
+    <div class="modal-content">
+        <div class="w3-content w3-display-container">
+            <img class="pianoSlides" src="images/piano.jpg" style="width:100%;border-radius: 10px; !important;">
+            <img class="pianoSlides"  src="images/pi1.jpg" style="width:100%; border-radius: 10px;!important;">
+            <img class="pianoSlides"  src="images/pi2.jpg" style="width:100%; border-radius: 10px;!important;">
+            <img class="pianoSlides"  src="images/pi3.jpg" style="width:100%; border-radius: 10px;!important;">
+            <button class="w3-button w3-display-left" onclick="plusDivs('piano',-1)">&#10094;</button>
+            <button class="w3-button w3-display-right" onclick="plusDivs('piano',1)">&#10095;</button>
+        </div>
+        <div style="padding: 5%;">
+            <h2>LED-Guided Piano Learning System</h2>
+            <p style="font-size: 20px">
+                December 2024 - Present
+            </p>
+            <p>
+                Developed an LED-guided piano learning system by integrating a mini piano and LED with a Raspberry Pi.
+                Throughout the project, we designed the system from concept to final product, gaining insights into the target audience. We also conducted prototype testing and held a demo market to validate our concept.
+                We're participated in the UT challenge for new entrepreneur and got in the top 40.
+            </p>
+            <div class="lang">
+                Raspberry pi
+            </div>
+            <div class="lang">
+                Java
+            </div>
+            <div class="lang">
+                CSS/HTML
+            </div>
+            <div class="lang">
+                Javascript
+            </div>
+        </div>
+    </div>
+</div>
 </body>
 
 </html>
