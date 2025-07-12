@@ -4,38 +4,100 @@
 <script src="src/main/Web/html/js/scroll.js"></script>
 <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css">
 <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons/font/bootstrap-icons.css">
-<link rel="stylesheet" href="src/main/Web/html/style/homePage.css">
+<link rel="stylesheet" href="src/main/Web/html/style/index.css">
 
 <body>
 <!--<div style=" background: linear-gradient(280deg, #7cbfe3, #4a5888);  min-height: 100vh; width: 100%;">-->
-    <div class="main" style="display: grid">
-    <section style="grid-column: 1/2; padding: 0 10px">
-        <div>
-            <h1 style="padding-left: 160px; margin-left: 140px;margin-top: 20px; margin-bottom: 29px;">Hello,</h1>
-            <div class="pic">
-                <img src="src/main/Web/html/images/sky.jpg" alt="error">
+<div class="main">
+    <section class="up">
+        <div class="up-div">
+            <div class="content">
+                <h1 style=" justify-self: center;margin-bottom: 30px">HELLO</h1>
+                <div class="pic">
+                    <img src="src/main/Web/html/images/sky.jpg" alt="error">
+                </div>
+            </div>
+            <div class="flex-bottom">
+                <h1 style="font-size:100px;color: rgba(255,255,255,0.32)">BIT STUDENT</h1>
+                <h1 style="font-size:120px; ">IT'S BOKYUNG KIM</h1>
+            </div>
+            <div class="mouse_scroll" aria-label="스크롤 유도">
+                <span class="mouse"></span>
+                <div class="down_arrow">
+                    <span class="down_arrow1"></span>
+                    <span class="down_arrow2"></span>
+                    <span class="down_arrow3"></span>
+                </div>
             </div>
         </div>
-        <h1 style="padding-left: 70px;margin-top:-285px;max-width: 20px">It's Bokyung kim</h1>
     </section>
-
-    <section style="grid-column: 2/3;">
-        <div class="dropdown">
-            <button class="dropbtn">
-                <span class="dropbtn_icon">
-                    <img src="src/main/Web/html/images/search.png" alt="error">
-                </span>
-                What do you want to know about me?
+    <div class="down">
+        <div class="head">
+            <p>Overview</p>
+        </div>
+        <section class="overview">
+            <button class="option" onclick="location.href='src/main/Web/html/Introduction.html'">
+                <p>
+                    <span>BOKYUNG_KIM
+                    </span>
+                </p>
+                <p id="introduction">
+                    About me, Education, Skills, Q&A
+                </p>
             </button>
-            <div class="dropdown-content">
-                <a href="src/main/Web/html/Introduction.html">INTRODUCTION</a>
-                <a href="src/main/Web/html/strength.html">STRENGTHS</a>
-                <a href="src/main/Web/html/experience.html">EXPERIENCE</a>
-                <a href="src/main/Web/html/skill.html">SKILLS</a>
-            </div>
-        </div>
-    </section>
+            <button class="option" onclick="location.href='src/main/Web/html/experience.html'">
+                <p >
+                    <span>
+                        EXPERIENCE
+                    </span>
+                </p>
+                <p id="experience">
+                    Project, Extra Program, Certification
+                </p>
+            </button>
+
+        </section>
     </div>
+    <script>
+        document.addEventListener("DOMContentLoaded", () => {
+            const down = document.querySelector(".down");
+
+            function checkScroll() {
+                const trigger = window.scrollY;
+
+                if (trigger > 50) {
+                    down.style.top = '0';
+                } else {
+                    down.style.top = '100vh';
+                }
+            }
+
+            window.addEventListener("scroll", checkScroll);
+            checkScroll();
+
+            const reveals = document.querySelectorAll('.overview');
+
+            function handleScroll() {
+                reveals.forEach(el => {
+                    const rect = el.getBoundingClientRect();
+                    const windowHeight = window.innerHeight;
+
+                    if (rect.top < windowHeight * 0.95) {
+                        el.classList.add('show');
+                    }
+                });
+            }
+
+            window.addEventListener('scroll', handleScroll);
+            handleScroll()
+        });
+
+
+
+
+
+    </script>
+</div>
 
 </body>
 
