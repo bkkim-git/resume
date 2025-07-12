@@ -1,0 +1,267 @@
+body {
+    background: #16314D;
+    /*height: 100vh;*/
+}
+
+h1{
+    font-family:"Black Han Sans";
+    color: #ffffff;
+    /*height: 62px;*/
+    font-size: 120px;
+    font-weight:bold;
+    line-height: 100px;
+    /*z-index: 2;*/
+}
+
+/*@media screen and(max-width: 1000px) {*/
+/*    .up{*/
+/*        flex-direction: column;*/
+/*    }*/
+/*}*/
+.up-div{
+    grid-template-columns: 1fr 1fr;
+    /*gap: 1px;*/
+    display: grid;
+}
+.flex-bottom{
+    grid-column: 2 / 3;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+    align-items: center;
+    /*width: 500px;*/
+}
+.up {
+    background: #16314D;
+    position: relative;
+    top: 0;
+    left: 0;
+    width: 100%;
+    min-height: 100vh;
+    z-index: 1;
+    justify-content: center;
+    align-items: center;
+    padding:5% 10%;
+    display: flex;
+}
+
+.content{
+    grid-column: 1 / 2;
+    justify-content: center;
+    align-items: center;
+    max-width: 400px;
+    /*padding: 5% 8%;*/
+    /*transform: scale(0.8);*/
+}
+.pic{
+    /*max-width: 350px;*/
+    justify-self: center;
+}
+.pic img {
+    width: 100%;
+    height: auto;
+    border-radius: 20px;
+}
+
+@media screen and (max-width: 1000px) {
+    .up-div {
+        grid-template-columns: 1fr; /* 한 줄짜리 (세로 정렬) */
+        grid-template-rows: auto auto auto; /* 필요 시 명시 */
+        justify-items: center;
+    }
+    .content,
+    .flex-bottom {
+        grid-column: 1 / 2; /* 작은 화면에서는 둘 다 같은 열 */
+    }
+    .flex-bottom{
+        padding:5%;
+    }
+
+}
+
+
+.down {
+    background-image: url('../images/p5.jpg');
+    position: relative;
+    top: 50vh;
+    z-index: 2;
+    min-height: 50vh;
+    padding: 100px;
+    box-sizing: border-box;
+    transition: top 0.9s ease;
+}
+
+
+.down.show {
+    opacity: 1;
+    transform: translateY(0);
+}
+
+.overview{
+    padding: 5% 0;
+    opacity: 0;
+    display: flex;
+    transform:translateY(-100px);
+    transition: opacity 0.6s ease-in, transform 0.6s ease-in;
+}
+.option{
+    background-color: white;
+    border-radius: 20px;
+    height:300px;
+    width: 50%;
+    margin: 5% 1%;
+    padding: 5%;
+    border:white;
+}
+.head{
+    border-bottom: 5px solid  #7a9673;
+    color: #7a9673;
+    font-size: 100px;
+    font-family: "Black Han Sans";
+    margin: 20px 0;
+
+}
+@media screen and (max-width: 1000px){
+    .overview{
+        display: flex;
+        flex-direction: column;
+    }
+    .option{
+        width: 100%;
+    }
+}
+
+.overview.show {
+    opacity: 1;
+    transform: translateY(0);
+}
+.option p {
+    width: 40%;
+    font-family: "Black Han Sans";
+    font-size: 40px;
+    color: #98b98f;
+}
+
+.option:hover{
+    background-color:#7a9673;
+    color: white;
+    border:1px solid white;
+
+}
+.option p:hover{
+    color: white;
+}
+.option p > span {
+    position: relative;
+}
+.option p > span::after {
+    content: "";
+    position: absolute;
+    left: 0;
+    top: 100%;
+    width: 100%;
+    height: 1px;
+    background-color: #ffffff;
+    transform: scale(0);
+    transition: transform 0.3s;
+
+}
+.option p:hover > span::after {
+    transform: scale(1);
+    color: white;
+}
+#introduction,#experience {
+    display: none;
+    font-size: 20px;
+}
+
+.option:hover #introduction,
+.option:hover #experience {
+    display:flex;
+}
+
+
+
+
+
+.mouse_scroll {
+    position: fixed;
+    bottom: 3%;
+    left: 50%;
+    transform: translateX(-50%);
+}
+
+
+.mouse {
+    display: block;
+    width: 30px;
+    height: 50px;
+    border: 2px solid #ffffff;
+    border-radius: 23px;
+}
+
+
+.mouse::after {
+    content: '';
+    display: block;
+    position: relative;
+    width: 2px;
+    height: 6px;
+    margin: 5px auto;
+    background: #ffffff;
+    animation: mouse-pulse 1.2s ease infinite;
+}
+
+
+.down_arrow {
+    margin-top: 6px;
+}
+
+
+.down_arrow span {
+    display: block;
+    position: relative;
+    left: 50%;
+    width: 8px;
+    height: 8px;
+    margin-bottom: 2px;
+    margin-left: -2px;
+    border-right: 2px solid #fff;
+    border-bottom: 2px solid #fff;
+    transform: rotate(45deg) translateX(-50%);
+    animation: fade-arrow 1s infinite;
+}
+
+
+.down_arrow2:nth-of-type(2) {
+    animation-delay: 0.2s;
+    animation-direction: alternate;
+}
+
+
+.down_arrow3:nth-of-type(3) {
+    animation-delay: 0.3s;
+    animation-direction: alternate;
+}
+
+
+@keyframes mouse-pulse {
+    0% {
+        opacity: 1;
+        transform: translateY(0);
+    }
+    100% {
+        opacity: 0;
+        transform: translateY(6px);
+    }
+}
+
+
+@keyframes fade-arrow {
+    0% {
+        opacity: 0;
+    }
+    100% {
+        opacity: 1;
+    }
+}

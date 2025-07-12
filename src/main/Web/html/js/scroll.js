@@ -1,5 +1,5 @@
 document.addEventListener("DOMContentLoaded", function () {
-    const sections = document.querySelectorAll(".other,.ex,.education,.about,.skill");
+    const sections = document.querySelectorAll(".ex,.eduBox,.q,.skills-row");
 
     function revealOnScroll() {
         sections.forEach(section => {

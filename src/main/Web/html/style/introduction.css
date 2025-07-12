@@ -1,0 +1,250 @@
+body {
+    background-color: #909bbb;
+    padding-bottom:400px;
+}
+
+.head{
+    font-weight: 700;
+    font-size: 60px ;
+    color:  #7a9673;
+    margin-top: 200px;
+    margin-bottom: 50px;
+    font-family: 'Black Han Sans', serif ;
+}
+.headContainer{
+    text-align: left;
+    display: flex;
+}
+
+h2 {
+    font-weight: 400;
+    font-size: clamp(20px, 8vw, 40px);
+    margin-bottom: 30px;
+    padding-bottom: 30px;
+}
+
+.mainContainer {
+    font-family: 'Helvetica', serif;
+    font-weight: lighter;
+    background-image: url('../images/p5.jpg');
+    padding: 2% 20%;
+    position: relative;
+    z-index: 1;
+    border-bottom-left-radius: 40px;
+    border-bottom-right-radius: 40px;
+}
+
+
+.divider {
+    margin-bottom: 100px;
+    margin-top: 50px;
+    height: 1px;
+    background-color: white;
+}
+
+.about {
+    display: grid;
+    color:  #7a9673;
+    grid-template-columns: 1fr 1fr;
+    align-items: center;
+    column-gap: 80px;
+}
+
+.ab1 {
+    grid-column: 1 / 2;
+    max-height: 550px;
+    border-radius: 40px;
+}
+
+.ab2 {
+    max-height: 600px;
+    color: #52644d;
+    border-top:  2px solid  #52644d;
+    border-bottom: 2px solid  #52644d;
+    font-size: 20px;
+    padding: 15% 0;
+    grid-column: 2 / 3;
+    line-height: 50px;
+    align-items: center;
+
+}
+
+
+
+@media screen and (max-width: 1000px) {
+    .about {
+        display: grid;
+        grid-template-columns: 1fr;
+        grid-template-rows: auto auto;
+
+    }
+
+    .ab1 {
+        grid-column: 1 / 2;
+        grid-row: 1;
+        justify-self: center;
+    }
+
+    .ab2 {
+        margin-top: 100px;
+        grid-column: 1 / 2;
+        grid-row: 2;
+    }
+}
+
+
+
+
+.eduBox,.q{
+    opacity: 0;
+    transform: translateY(30px);
+    transition: opacity 0.6s ease-out, transform 0.6s ease-out;
+}
+
+.eduBox.show,.q.show{
+    opacity: 1;
+    transform: translateY(0);
+}
+
+
+.education {
+    color:  #52644d;
+}
+
+
+.pica{
+    background-color: white;
+    /*padding: 10px;*/
+    border-radius: 10px;
+    justify-content: center;
+    align-items: center;
+}
+
+.pica img{
+    border-radius: 10px;
+    max-width: 170px;
+    max-height: 200%;
+    object-fit: contain;
+}
+
+
+.footer {
+    background-color: #7a9673;
+    width: 100%;
+    height: 400px;
+    position: fixed;
+    bottom: 0;
+    z-index: -1;
+}
+
+.grid-container{
+    display: grid;
+    grid-template-columns: 8fr 4fr;
+    padding: 0 100px;
+}
+
+
+.grid-container{
+    display: grid;
+    grid-template-columns: 8fr 4fr;
+    padding: 0 100px;
+}
+.eduBox{
+    /*align-items: center;*/
+    display: flex;
+    /*border:1px solid white;*/
+    margin-bottom: 40px;
+    border-radius: 10px;
+    padding:20px;
+
+    background: rgb(231, 230, 226) !important;
+    box-shadow: -3px -5px 7px #ffffff73, 3px 5px 5px rgba(94, 104, 121, .288);
+}
+@media screen and (max-width: 1000px) {
+    .eduBox{
+        flex-direction: column;
+    }
+
+    .desEd{
+        margin: 10px;
+    }
+    .logo{
+        margin-right: 0!important;
+    }
+
+}
+.logo{
+    text-align: center;
+    font-size: 23px;
+    display: flex;
+    flex-direction: column;
+    margin-right: 60px;
+    color:  #52644d;
+}
+
+.ins{
+    font-size: 30px!important;
+    font-weight: bolder!important;
+    margin-bottom: 0;
+}
+.bach{
+    font-size: 25px!important;
+}
+.course{
+    font-size: 20px;
+    color: rgba(82, 100, 77, 0.73);
+}
+
+.question{
+    background: rgb(231, 230, 226) !important;
+    box-shadow: -3px -3px 7px #ffffff73, 3px 3px 5px rgba(94, 104, 121, .288);
+    border-radius: 10px;
+    padding: 20px;
+    margin-bottom:60px;
+    text-align: left;
+}
+
+.question:after {
+    content: "";
+    position: absolute;
+    top: 20px;
+    right: 100%;
+    border-top: 10px solid transparent;
+    border-bottom: 10px solid transparent;
+    border-right: 15px solid rgba( 255, 255, 255, 0.2 );
+
+}
+
+.q p {
+    color:#52644d;
+    font-family:'Helvetica';
+    font-weight: lighter;
+    font-size: 20px;
+    margin: 0;
+}
+
+.answer{
+    position: relative;
+    margin-bottom: 50px;
+    border-radius: 10px;
+    background: rgba(122, 150, 115, 0.14) !important;
+    box-shadow: 0 3px 5px 0 rgba(41, 66, 84, 0.58);
+    padding: 25px;
+    display: inline-block;
+    max-width: 600px;
+    word-wrap: break-word;
+    margin-left: auto;
+}
+.answer:after {
+    content: "";
+    position: absolute;
+    top: 20px;
+    left: 100%;
+    border-top: 10px solid transparent;
+    border-bottom: 10px solid transparent;
+    border-left: 15px solid rgba(122, 150, 115, 0.14);
+}
+.q{
+    display: flex;
+
+}
