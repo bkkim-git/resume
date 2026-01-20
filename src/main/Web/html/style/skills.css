@@ -15,7 +15,7 @@ body {
     font-size: 70px ;
     color:  #7a9673;
     padding: 80px 0;
-    font-family: 'Black Han Sans', serif ;
+    font-family: blackHans ;
 }
 .headContainer{
     text-align: left;
@@ -117,7 +117,7 @@ body {
     color: #4a6245;
     font-weight: normal;
     font-size: 13px;
-    font-family: "Black Han Sans";
+    font-family: blackHans;
 
 }
 .iconBox:hover img{

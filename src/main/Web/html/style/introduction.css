@@ -32,8 +32,8 @@ h2 {
 }
 
 .mainContainer {
-    font-family: 'Helvetica', serif;
-    font-weight: lighter;
+    font-family: 'Helvetica';
+    /*font-weight: lighter;*/
     background-image: url('../images/p5.jpg');
     padding: 2% 20%;
     position: relative;
@@ -166,6 +166,7 @@ h2 {
     /*border:1px solid white;*/
     margin-bottom: 40px;
     border-radius: 10px;
+    border-radius: 10px;
     padding:20px;
 
     background: rgb(255, 255, 255) !important;
@@ -195,13 +196,13 @@ h2 {
 }
 
 .ins{
-    font-size: 6vh!important;
+    font-size: 45px!important;
     margin-bottom: 0;
     font-family: MyFont!important;
     color:  #7a9673;
 }
 .bach{
-    font-size: 3vh!important;
+    font-size:25px!important;
     font-family: MyFont!important;
 }
 .logo p{
@@ -209,7 +210,7 @@ h2 {
     color: #7a9673;
 }
 .course{
-    font-size: 20px;
+    font-size: 3vh;
     color: rgba(82, 100, 77, 0.73);
 }
 
@@ -236,7 +237,7 @@ h2 {
 .q p {
     color:#52644d;
     font-family:'Helvetica';
-    font-weight: lighter;
+    /*font-weight: lighter;*/
     font-size: 20px;
     margin: 0;
 }
