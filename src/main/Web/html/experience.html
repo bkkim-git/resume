@@ -55,16 +55,70 @@
                         ERP System
                     </button>
                 </div>
+                <div class="pic swiper-slide">
+                    <div style="background: black; border-radius: 20px;">
+                        <img src="images/call1.jpeg"  style="opacity: 0.5" alt="error">
+                    </div>
+                    <button class="moreDetails" data-target="call">
+                        Adaptive language learning Project
+                    </button>
+                </div>
+                <div class="pic swiper-slide">
+                    <div style="background: black; border-radius: 20px;">
+                        <img src="images/sign1.jpeg"  style="opacity: 0.5" alt="error">
+                    </div>
+                    <button class="moreDetails" data-target="sign">
+                        From Sign to Speech
+                    </button>
+                </div>
             </div>
             <div class="swiper-pagination"></div>
         </div>
         <section class="headContainer">
-            <h1 class="head">II. EXTRA PROGRAM</h1>
+            <h1 class="head">II. EXPERIENCE</h1>
+        </section>
+        <div class="card-box">
+            <span class="card-date">Sep 2025 - Aug 2026</span>
+            <div class="card-content">
+                <p class="card-title">Honours Association Ockham</p>
+                <p class="card-subtitle">Board, Treasurer</p>
+                <ul class="card-desc">
+                    <li>Worked closely with the Honours Office to plan and execute student events.</li>
+                    <li>Oversee promotional activities and manage budgeting.</li>
+                </ul>
+            </div>
+        </div>
+        <div class="card-box">
+            <span class="card-date">Oct 2025</span>
+            <div class="card-content">
+                <p class="card-title">RackIT</p>
+                <p class="card-subtitle">Co-founder</p>
+                <p class="card-text">
+                    Established RackIT as part of the Honours Program, developing a solution for tennis players.
+                </p>
+            </div>
+        </div>
+        <div class="card-box">
+            <span class="card-date">Nov 2024 - July 2025</span>
+            <div class="card-content">
+                <p class="card-title">Piano Light</p>
+                <p class="card-subtitle">Co-founder</p>
+                <p class="card-text">
+                    Built an LED-guided piano learning system using a mini piano, LEDs, Raspberry Pi, and Python.
+                </p>
+            </div>
+        </div>
+
+
+
+        <section class="headContainer">
+            <h1 class="head">III. EXTRA PROGRAM</h1>
         </section>
         <section class="ex">
             <div class="box">
-                <h2 style="font-family:'Helvetica' !important;font-weight: normal!important; ">Honours Program</h2>
-                <h3 >Entrepreneurship & Business Development</h3>
+                <span class="card-date">Feb 2025 - July 2026</span>
+                <h2 style="font-family:MyFont !important;font-size: 6vh; ">Honours Program</h2>
+                <p style="font-family: MyFont; font-size: 3vh; " >Entrepreneurship & Business Development</p>
 
                 <p>
                     I am currently enrolled in an honors program offered to the top 10% of students, selected based on my CV and interview performance.
@@ -76,7 +130,7 @@
         </section>
 
         <section class="headContainer">
-            <h1 class="head">III. CERTIFICATION</h1>
+            <h1 class="head">IV. CERTIFICATION</h1>
         </section>
 
         <div class="certification">
@@ -85,7 +139,7 @@
                     <img src="images/pianoLogo.png" alt="error">
                 </div>
                 <div class="box">
-                    <h2 style="font-family:'Helvetica' !important;font-weight: normal!important; " >Module 6 best demo award public vote</h2>
+                    <h2 style="font-family:MyFont !important;font-weight: normal!important; " >Module 6 best demo award public vote</h2>
                     <p>
                         Implemented the LED-guided piano, which received positive feedback from both students and professors. As a result, we were honored to receive the Best Demo Award through a public vote.
                     </p>
@@ -98,9 +152,19 @@
                     <img src="images/rapid.jpg" alt="error">
                 </div>
                 <div class="box">
-                    <h2 style="font-family:'Helvetica' !important;font-weight: normal!important; ">Rapid Mendix Developer</h2>
+                    <h2 style="font-family:MyFont !important;font-weight: normal!important; ">Rapid Mendix Developer</h2>
                     <p>
-                        During project, we utilized the Mendix platform, and as a result, I obtained the certification in Mendix.            </p>
+                        During the Module 3 project, we utilized the Mendix platform, and as a result, I obtained the certification in Mendix.            </p>
+                </div>
+            </section>
+            <section class="certBox">
+                <div class="pic">
+                    <img src="images/award.png" alt="error">
+                </div>
+                <div class="box">
+                    <h2 style="font-family:MyFont !important;font-weight: normal!important; ">ASML Makers Award</h2>
+                    <p>
+                        It was honour to win the ASML Makers Award from UT challenge with my teamamtes.            </p>
                 </div>
             </section>
         </div>
@@ -141,7 +205,7 @@
 
 <script>
     document.addEventListener("DOMContentLoaded", function () {
-        const paragraphs = document.querySelectorAll("p");
+        const paragraphs = document.querySelectorAll("p,.card-box,.certBox");
 
         function revealOnScroll() {
             paragraphs.forEach(paragraph => {
@@ -349,6 +413,58 @@
             <div style="justify-content: center; position:relative; bottom: 0">
                 <div class="lang">
                     ODoo
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+<div id="call" class="modal">
+    <div class="modal-content">
+        <div class="w3-content w3-display-container">
+            <img class="callSlides" src="images/call1.jpeg" style="width:100%;border-radius: 10px; !important;">
+            <img class="callSlides" src="images/call2.jpeg" style="width:100%;border-radius: 10px; !important;">
+
+
+            <button class="w3-button w3-display-left" onclick="plusDivs('call', -1)">&#10094;</button>
+            <button class="w3-button w3-display-right" onclick="plusDivs('call', 1)">&#10095;</button>
+        </div>
+        <div style="padding: 20px;">
+            <h2 style="color: white!important;">Adaptive Language Learning</h2>
+            <p style="font-size: 20px">
+                Sep 2025 - Nov 2025
+            </p>
+            <p>
+                Developed an adaptive AI system to correct grammatical errors for non-native English speakers, focusing on Spanish-English interference.            </p>
+            <div style="justify-content: center; position:relative; bottom: 0">
+                <div class="lang">
+                    Python
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+<div id="sign" class="modal">
+    <div class="modal-content">
+        <div class="w3-content w3-display-container">
+            <img class="signSlides" src="images/sign1.jpeg" style="width:100%;border-radius: 10px; !important;">
+            <img class="signSlides" src="images/sign2.jpeg" style="width:100%;border-radius: 10px; !important;">
+
+
+            <button class="w3-button w3-display-left" onclick="plusDivs('sign', -1)">&#10094;</button>
+            <button class="w3-button w3-display-right" onclick="plusDivs('sign', 1)">&#10095;</button>
+        </div>
+        <div style="padding: 20px;">
+            <h2 style="color: white!important;">From Sign to Speech</h2>
+            <p style="font-size: 20px">
+                Nov 2025 - Dec 2025
+            </p>
+            <p>
+                Developed a real-time American Sign Language (ASL) translator using Raspberry Pi 5 to bridge communication gaps. Implemented a custom CNN model based on skeletal hand tracking.            <div style="justify-content: center; position:relative; bottom: 0">
+                <div class="lang">
+                    Python
+                </div>
+                <div class="lang">
+                    Raspberry Pi
                 </div>
             </div>
         </div>

@@ -2,9 +2,12 @@ body {
     background: #16314D;
     /*height: 100vh;*/
 }
-
+@font-face {
+    font-family: "blackHans";
+    src: url("../../fonts/BlackHanSans-Regular.ttf") format("truetype");
+}
 h1{
-    font-family:"Black Han Sans";
+    font-family:blackHans;
     color: #ffffff;
     /*height: 62px;*/
     font-size: 120px;
@@ -117,7 +120,7 @@ h1{
     border-bottom: 5px solid  #7a9673;
     color: #7a9673;
     font-size: 100px;
-    font-family: "Black Han Sans";
+    font-family: blackHans;
     margin: 20px 0;
 
 }
@@ -137,7 +140,7 @@ h1{
 }
 .option p {
     width: 40%;
-    font-family: "Black Han Sans";
+    font-family:blackHans;
     font-size: 40px;
     color: #98b98f;
 }

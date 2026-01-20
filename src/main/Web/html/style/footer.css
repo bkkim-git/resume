@@ -43,3 +43,10 @@ h3{
     text-decoration: none;
 }
 
+@media screen and (max-width: 1000px){
+    .grid-container{
+        display: flex;
+        flex-direction: column;
+    }
+
+}

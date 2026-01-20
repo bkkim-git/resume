@@ -2,15 +2,23 @@ body {
     background-color: #909bbb;
     padding-bottom:400px;
 }
-
+@font-face {
+    font-family: "blackHans";
+    src: url("../../fonts/BlackHanSans-Regular.ttf") format("truetype");
+}
+@font-face {
+    font-family: "MyFont";
+    src: url("../../fonts/anton.woff") format("woff"),
+    url("../../fonts/anton.woff") format("woff");
+}
 .head{
     font-weight: 700;
     font-size: 60px ;
     color:  #7a9673;
     margin-top: 200px;
-    margin-bottom: 50px;
-    font-family: 'Black Han Sans', serif ;
+    font-family:blackHans;
 }
+
 .headContainer{
     text-align: left;
     display: flex;
@@ -48,12 +56,15 @@ h2 {
     grid-template-columns: 1fr 1fr;
     align-items: center;
     column-gap: 80px;
+    aspect-ratio: 1 / 1;
+    object-fit: cover;
 }
 
 .ab1 {
     grid-column: 1 / 2;
     max-height: 550px;
     border-radius: 40px;
+
 }
 
 .ab2 {
@@ -157,9 +168,10 @@ h2 {
     border-radius: 10px;
     padding:20px;
 
-    background: rgb(231, 230, 226) !important;
+    background: rgb(255, 255, 255) !important;
     box-shadow: -3px -5px 7px #ffffff73, 3px 5px 5px rgba(94, 104, 121, .288);
 }
+
 @media screen and (max-width: 1000px) {
     .eduBox{
         flex-direction: column;
@@ -183,12 +195,18 @@ h2 {
 }
 
 .ins{
-    font-size: 30px!important;
-    font-weight: bolder!important;
+    font-size: 6vh!important;
     margin-bottom: 0;
+    font-family: MyFont!important;
+    color:  #7a9673;
 }
 .bach{
-    font-size: 25px!important;
+    font-size: 3vh!important;
+    font-family: MyFont!important;
+}
+.logo p{
+    font-family: MyFont;
+    color: #7a9673;
 }
 .course{
     font-size: 20px;

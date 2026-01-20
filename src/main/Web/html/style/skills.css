@@ -100,8 +100,7 @@ body {
     box-shadow:-3px -3px 7px #ffffff73, 3px 3px 5px rgba(94, 104, 121, .288);
 }
 .iconBox:hover{
-    background-color: rgba(224, 224, 224, 0.18) !important;
-    color: white!important;
+    background-color: rgba(122, 150, 115, 0.35) !important;
 }
 .iconBox img {
     max-width: 100%;
@@ -115,8 +114,11 @@ body {
 .iconLabel{
     display: none;
     position: absolute;
-    color: black;
+    color: #4a6245;
     font-weight: normal;
+    font-size: 13px;
+    font-family: "Black Han Sans";
+
 }
 .iconBox:hover img{
     opacity: 0.1;
